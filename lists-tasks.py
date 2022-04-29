@@ -9,6 +9,14 @@ rev_list = [i for i in reversed(lst)]
 
 print(rev_list)
 
+# concatenate two lists index-wise
+list1 = ["M", "na", "i", "Ke"]
+list2 = ["y", "me", "s", "lly"]
+
+list3 = [i+j for i,j in zip(list1, list2)]
+
+print(list3)
+
 # turning items of a list into their squares
 sq_list = [i ** 2 for i in lst]
 
