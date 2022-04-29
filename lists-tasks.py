@@ -17,6 +17,14 @@ list3 = [i+j for i,j in zip(list1, list2)]
 
 print(list3)
 
+# Concatenate two lists in the following order
+list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
+
+list3 = [i+j for i in list1 for j in list2]
+
+print(list3)
+
 # turning items of a list into their squares
 sq_list = [i ** 2 for i in lst]
 
