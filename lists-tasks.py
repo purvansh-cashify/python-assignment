@@ -13,7 +13,7 @@ print(rev_list)
 list1 = ["M", "na", "i", "Ke"]
 list2 = ["y", "me", "s", "lly"]
 
-list3 = [i+j for i,j in zip(list1, list2)]
+list3 = [i + j for i, j in zip(list1, list2)]
 
 print(list3)
 
@@ -21,7 +21,7 @@ print(list3)
 list1 = ["Hello ", "take "]
 list2 = ["Dear", "Sir"]
 
-list3 = [i+j for i in list1 for j in list2]
+list3 = [i + j for i in list1 for j in list2]
 
 print(list3)
 
@@ -50,6 +50,16 @@ lst = [1, 2, 3, 5]
 lst.insert(3, 4)
 
 print(lst)
+
+# Replace list’s item with new value if found
+list1 = [5, 10, 15, 20, 25, 50, 20]
+
+for i in range(0, len(list1)):
+    if list1[i] == 20:
+        list1[i] = 200
+        break
+
+print(list1)
 
 # remove all occurrences of a specific item from a list
 lst = [1, 1, 2, 2, 2, 3, 4, 2, 5, 2]
