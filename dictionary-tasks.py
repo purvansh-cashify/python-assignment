@@ -38,8 +38,16 @@ sampleDict = {
     }
 }
 print("Print the value of key history - ")
-print(sampleDict['class']['student']['marks']['history'])
+print(sampleDict['class']['student']['marks']['history'], "\n")
 
 # initialise dictionary with default values
+
+employees = ['Kelly', 'Emma']
+defaults = {"designation": 'Developer', "salary": 8000}
+
+dict1 = dict.fromkeys(employees, defaults)
+
+print("Initialise dictionary with default values - ")
+print(dict1, "\n")
 
 # delete a list of keys
