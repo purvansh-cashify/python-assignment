@@ -69,7 +69,6 @@ print("Creating dictionary by extracting keys from given dictionary -")
 print(dict1, "\n")
 
 # delete a list of keys
-
 sample_dict = {
     "name": "Kelly",
     "age": 25,
@@ -85,3 +84,10 @@ for i in keys:
 
 print("Deleting a list of keys -")
 print(sample_dict, "\n")
+
+# check if a value exists in a dictionary
+sample_dict = {'a': 100, 'b': 200, 'c': 300}
+
+print("Check if a value exists in dict - ")
+if 200 in sample_dict.values():
+    print("200 present in dictionary \n")
