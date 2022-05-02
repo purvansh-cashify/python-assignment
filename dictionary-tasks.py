@@ -105,3 +105,17 @@ sample_dict["location"] = "New york"
 
 print("Rename a key of dictionary - ")
 print(sample_dict, "\n")
+
+# Get the key of a minimum value from the following dictionary
+sample_dict = {
+  'Physics': 82,
+  'Math': 65,
+  'history': 75
+}
+
+print("Key of minimum value from dictionary - ")
+for i in sample_dict:
+    if sample_dict[i] == min(sample_dict.values()):
+        print(i, "\n")
+
+
