@@ -69,3 +69,19 @@ print("Creating dictionary by extracting keys from given dictionary -")
 print(dict1, "\n")
 
 # delete a list of keys
+
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"
+}
+
+keys = ["name", "salary"]
+
+for i in keys:
+    if i in sample_dict:
+        sample_dict.pop(i)
+
+print("Deleting a list of keys -")
+print(sample_dict, "\n")
