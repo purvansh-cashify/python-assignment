@@ -91,3 +91,17 @@ sample_dict = {'a': 100, 'b': 200, 'c': 300}
 print("Check if a value exists in dict - ")
 if 200 in sample_dict.values():
     print("200 present in dictionary \n")
+
+# rename key of a dictionary
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"
+}
+
+sample_dict.pop("city")
+sample_dict["location"] = "New york"
+
+print("Rename a key of dictionary - ")
+print(sample_dict, "\n")
