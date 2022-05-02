@@ -50,4 +50,22 @@ dict1 = dict.fromkeys(employees, defaults)
 print("Initialise dictionary with default values - ")
 print(dict1, "\n")
 
+# create a dictionary by extracting the keys from a given dictionary
+
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"}
+
+keys = ["name", "salary"]
+dict1 = {}
+
+for i in sample_dict:
+    if i in keys:
+        dict1[i] = sample_dict[i]
+
+print("Creating dictionary by extracting keys from given dictionary -")
+print(dict1, "\n")
+
 # delete a list of keys
