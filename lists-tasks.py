@@ -51,6 +51,15 @@ lst.insert(3, 4)
 
 print(lst)
 
+# extend nested list by adding sublist
+
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+
+sub_list = ["h", "i", "j"]
+list1[2][1][2].extend(sub_list)
+
+print(list1)
+
 # Replace list’s item with new value if found
 list1 = [5, 10, 15, 20, 25, 50, 20]
 
