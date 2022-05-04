@@ -44,7 +44,13 @@ def swap():
     print("tuple1 = ", tuple1)
     print("tuple2 = ", tuple2, "\n")
 
+def copy():
+    tuple1 = (11, 22, 33, 44, 55, 66)
 
+    tuple2 = tuple1[3:5]
+
+    print("Copy specific elements from one tuple to a new tuple - ")
+    print(tuple2, "\n")
 
 if __name__ == '__main__':
     reverse_tuple()
@@ -52,3 +58,4 @@ if __name__ == '__main__':
     create()
     unpack()
     swap()
+    copy()
