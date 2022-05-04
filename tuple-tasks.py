@@ -32,8 +32,23 @@ def unpack():
     print(d, "\n")
 
 
+def swap():
+    tuple1 = (11, 22)
+    tuple2 = (99, 88)
+
+    temp = tuple1
+    tuple1 = tuple2
+    tuple2 = temp
+
+    print("Swap two tuples in Python - ")
+    print("tuple1 = ", tuple1)
+    print("tuple2 = ", tuple2, "\n")
+
+
+
 if __name__ == '__main__':
     reverse_tuple()
     access()
     create()
     unpack()
+    swap()
