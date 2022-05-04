@@ -84,6 +84,15 @@ def add():
     print("Update set1 by adding items from set2, except common items - ")
     print(set1, '\n')
 
+def remove_update():
+    set1 = {10, 20, 30, 40, 50}
+    set2 = {30, 40, 50, 60, 70}
+
+    set1.intersection_update(set2)
+
+    print("Remove items from set1 that are not common to both set1 and set2 - ")
+    print(set1, "\n")
+
 
 if __name__ == '__main__':
     add_list()
@@ -94,3 +103,4 @@ if __name__ == '__main__':
     not_both()
     common()
     add()
+    remove_update()
