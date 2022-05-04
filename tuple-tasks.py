@@ -6,5 +6,13 @@ def reverse_tuple():
     print(tuple1, '\n')
 
 
+def access():
+    tuple1 = ("Orange", [10, 20, 30], (5, 15, 25))
+
+    print("Access value 20 from the tuple - ")
+    print(tuple1[1][1])
+
+
 if __name__ == '__main__':
     reverse_tuple()
+    access()
