@@ -34,7 +34,20 @@ def unique():
     print(new_set, "\n")
 
 
+# Update the first set with items that don’t exist in the second set
+def update():
+    set1 = {10, 20, 30}
+    set2 = {20, 40, 50}
+
+    set1.difference_update(set2)
+
+    print("Update the first set with items that don’t exist in the second set - ")
+    print(set1, "\n")
+
+
+
 if __name__ == '__main__':
     add_list()
     identical()
     unique()
+    update()
