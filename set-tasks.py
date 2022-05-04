@@ -45,9 +45,29 @@ def update():
     print(set1, "\n")
 
 
+def remove():
+    set1 = {10, 20, 30, 40, 50}
+
+    set1.difference_update(set([10, 20, 30]))
+
+    print("Remove items from the set at once - ")
+    print(set1, "\n")
+
+
+def not_both():
+    set1 = {10, 20, 30, 40, 50}
+    set2 = {30, 40, 50, 60, 70}
+
+    new_set = set1.symmetric_difference(set2)
+
+    print("Return a set of elements present in Set A or B, but not both - ")
+    print(new_set, "\n")
+
 
 if __name__ == '__main__':
     add_list()
     identical()
     unique()
     update()
+    remove()
+    not_both()
