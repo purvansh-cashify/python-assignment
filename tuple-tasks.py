@@ -13,6 +13,14 @@ def access():
     print(tuple1[1][1])
 
 
+def create():
+    tuple1 = tuple([50])
+
+    print("Create a tuple with single item 50 - ")
+    print(tuple1)
+
+
 if __name__ == '__main__':
     reverse_tuple()
     access()
+    create()
