@@ -64,6 +64,17 @@ def not_both():
     print(new_set, "\n")
 
 
+def common():
+    set1 = {10, 20, 30, 40, 50}
+    set2 = {60, 70, 80, 90, 10}
+
+    if set1.isdisjoint(set2) is False:
+        new_set = set1.intersection(set2)
+
+    print("Check if two sets have any elements in common. If yes, display the common elements - ")
+    print(new_set, "\n")
+
+
 if __name__ == '__main__':
     add_list()
     identical()
@@ -71,3 +82,4 @@ if __name__ == '__main__':
     update()
     remove()
     not_both()
+    common()
