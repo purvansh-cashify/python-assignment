@@ -81,6 +81,18 @@ def count():
     print("Counts the number of occurrences of item 50 from a tuple - ")
     print(cnt, "\n")
 
+def all_same():
+    tuple1 = (45, 45, 45, 45)
+
+    tag = True
+
+    print("Check if all items in the tuple are the same - ")
+
+    for i in range(len(tuple1)-1):
+        if tuple1[i] != tuple1[i+1]:
+            tag = False
+
+    print(tag)
 
 
 
@@ -93,5 +105,7 @@ if __name__ == '__main__':
     swap()
     copy()
     modify()
+    #sort()
     count()
+    all_same()
 
