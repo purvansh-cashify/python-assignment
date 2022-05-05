@@ -65,6 +65,13 @@ def rev_list():
         print(i)
     print("\n")
 
+def negative():
+
+    print("Display numbers from -10 to -1 using for loop - ")
+    for i in range(-10, 0):
+        print(i)
+    print("\n")
+
 
 if __name__ == "__main__":
     first_ten()
@@ -75,3 +82,4 @@ if __name__ == "__main__":
     digits(75869)
     pattern2()
     rev_list()
+    negative()
