@@ -44,6 +44,7 @@ def swap():
     print("tuple1 = ", tuple1)
     print("tuple2 = ", tuple2, "\n")
 
+
 def copy():
     tuple1 = (11, 22, 33, 44, 55, 66)
 
@@ -52,6 +53,38 @@ def copy():
     print("Copy specific elements from one tuple to a new tuple - ")
     print(tuple2, "\n")
 
+
+def modify():
+    tuple1 = (11, [22, 33], 44, 55)
+
+    tuple1[1][0] = 222
+
+    print("Modify the tuple - ")
+    print(tuple1)
+
+
+def sort():
+    tuple1 = (('a', 23), ('b', 37), ('c', 11), ('d', 29))
+
+    for i in tuple1:
+        print(tuple[1])
+
+
+def count():
+    tuple1 = (50, 10, 60, 70, 50)
+    cnt = 0
+
+    for i in tuple1:
+        if i == 50:
+            cnt += 1
+
+    print("Counts the number of occurrences of item 50 from a tuple - ")
+    print(cnt, "\n")
+
+
+
+
+
 if __name__ == '__main__':
     reverse_tuple()
     access()
@@ -59,3 +92,6 @@ if __name__ == '__main__':
     unpack()
     swap()
     copy()
+    modify()
+    count()
+
