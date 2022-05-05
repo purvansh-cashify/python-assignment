@@ -65,20 +65,33 @@ def rev_list():
         print(i)
     print("\n")
 
-def negative():
 
+def negative():
     print("Display numbers from -10 to -1 using for loop - ")
     for i in range(-10, 0):
         print(i)
     print("\n")
 
-def else_done():
 
+def else_done():
     print("Use else block to display a message “Done” after successful execution of for loop - ")
     for i in range(5):
         print(i)
     else:
         print("Done")
+
+
+def prime():
+    start = 25
+    end = 50
+    print("Write a program to display all prime numbers within a range - ")
+    for i in range(start, end + 1):
+        for j in range(2, i):
+            if i % j == 0:
+                break
+        else:
+            print(i)
+
 
 if __name__ == "__main__":
     first_ten()
@@ -91,3 +104,4 @@ if __name__ == "__main__":
     rev_list()
     negative()
     else_done()
+    prime()
