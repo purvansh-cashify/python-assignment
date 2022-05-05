@@ -38,6 +38,15 @@ def list_loop():
     print("Display numbers from a list using loop - ")
     for i in numbers:
         print(i)
+    print("\n")
+
+def digits(num):
+
+    num = str(num)
+    cnt = len(num)
+
+    print("Count the total number of digits in a number - ")
+    print(cnt, "\n")
 
 
 if __name__ == "__main__":
@@ -46,3 +55,4 @@ if __name__ == "__main__":
     calculate(10)
     multiplication(2)
     list_loop()
+    digits(75869)
