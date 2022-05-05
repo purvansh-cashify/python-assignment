@@ -24,16 +24,20 @@ def calculate(num):
     print("Calculate the sum of all numbers from 1 to a given number - ")
     print(sum, "\n")
 
+
 def multiplication(num):
-    product = 1
     print("Write a program to print multiplication table of a given number - ")
     for i in range(1, 11):
-        print(num*i)
+        print(num * i)
     print("\n")
 
 
+def list_loop():
+    numbers = [12, 75, 150, 180, 145, 525, 50]
 
-
+    print("Display numbers from a list using loop - ")
+    for i in numbers:
+        print(i)
 
 
 if __name__ == "__main__":
@@ -41,3 +45,4 @@ if __name__ == "__main__":
     pattern()
     calculate(10)
     multiplication(2)
+    list_loop()
