@@ -24,10 +24,20 @@ def calculate(num):
     print("Calculate the sum of all numbers from 1 to a given number - ")
     print(sum, "\n")
 
-def
+def multiplication(num):
+    product = 1
+    print("Write a program to print multiplication table of a given number - ")
+    for i in range(1, 11):
+        print(num*i)
+    print("\n")
+
+
+
+
 
 
 if __name__ == "__main__":
     first_ten()
     pattern()
     calculate(10)
+    multiplication(2)
