@@ -40,13 +40,14 @@ def list_loop():
         print(i)
     print("\n")
 
-def digits(num):
 
+def digits(num):
     num = str(num)
     cnt = len(num)
 
     print("Count the total number of digits in a number - ")
     print(cnt, "\n")
+
 
 def pattern2():
     print("Print the following pattern - ")
@@ -54,6 +55,16 @@ def pattern2():
         for j in range(i, 0, -1):
             print(j, end='')
         print("")
+
+
+def rev_list():
+    list1 = [10, 20, 30, 40, 50]
+
+    print("Print list in reverse order using a loop - ")
+    for i in reversed(list1):
+        print(i)
+    print("\n")
+
 
 if __name__ == "__main__":
     first_ten()
@@ -63,3 +74,4 @@ if __name__ == "__main__":
     list_loop()
     digits(75869)
     pattern2()
+    rev_list()
