@@ -48,6 +48,12 @@ def digits(num):
     print("Count the total number of digits in a number - ")
     print(cnt, "\n")
 
+def pattern2():
+    print("Print the following pattern - ")
+    for i in range(5, 0, -1):
+        for j in range(i, 0, -1):
+            print(j, end='')
+        print("")
 
 if __name__ == "__main__":
     first_ten()
@@ -56,3 +62,4 @@ if __name__ == "__main__":
     multiplication(2)
     list_loop()
     digits(75869)
+    pattern2()
