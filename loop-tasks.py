@@ -93,6 +93,20 @@ def prime():
             print(i)
 
 
+def fibonacci():
+    num1 = 0
+    num2 = 1
+    lst = [num1, num2]
+
+    while len(lst) < 10:
+        sum1 = num1 + num2
+        num1 = num2
+        num2 = sum1
+        lst.append(sum1)
+
+    print(lst)
+
+
 if __name__ == "__main__":
     first_ten()
     pattern()
@@ -105,3 +119,4 @@ if __name__ == "__main__":
     negative()
     else_done()
     prime()
+    fibonacci()
