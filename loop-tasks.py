@@ -137,7 +137,7 @@ def cube_all(num):
 
 def sum_all(num):
     lst = []
-    for i in range(1, num+1):
+    for i in range(1, num + 1):
         two = str(2)
         num = two * i
         num = int(num)
@@ -147,6 +147,17 @@ def sum_all(num):
     print(lst)
 
     return sum(lst)
+
+
+def pattern3():
+    print("Print the following pattern - ")
+    for i in range(1, 6):
+        st = "* " * i
+        print(st)
+
+    for i in range(4, 0, -1):
+        st = "* " * i
+        print(st)
 
 
 if __name__ == "__main__":
@@ -167,3 +178,4 @@ if __name__ == "__main__":
     print(odd([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]), "\n")
     print(cube_all(5), "\n")
     print(sum_all(5), "\n")
+    pattern3()
