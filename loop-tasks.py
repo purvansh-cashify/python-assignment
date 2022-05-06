@@ -118,6 +118,12 @@ def factorial(num):
     return fac
 
 
+def reverse_integer(num):
+    num = str(num)
+    print("Reverse a given integer number - ")
+    return num[::-1]
+
+
 if __name__ == "__main__":
     first_ten()
     pattern()
@@ -132,3 +138,4 @@ if __name__ == "__main__":
     prime()
     fibonacci()
     print(factorial(5), "\n")
+    print(reverse_integer(123), "\n")
