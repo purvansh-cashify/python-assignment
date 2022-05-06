@@ -129,6 +129,11 @@ def odd(lst):
     return lst[1::2]
 
 
+def cube_all(num):
+    lst = [i**3 for i in range(1, num+1)]
+    print("Calculate the cube of all numbers from 1 to a given number - ")
+    return lst
+
 
 
 if __name__ == "__main__":
@@ -147,3 +152,4 @@ if __name__ == "__main__":
     print(factorial(5), "\n")
     print(reverse_integer(123), "\n")
     print(odd([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]), "\n")
+    print(cube_all(5), "\n")
