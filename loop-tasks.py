@@ -124,6 +124,13 @@ def reverse_integer(num):
     return num[::-1]
 
 
+def odd(lst):
+    print("Use a loop to display elements from a given list present at odd index positions - ")
+    return lst[1::2]
+
+
+
+
 if __name__ == "__main__":
     first_ten()
     pattern()
@@ -139,3 +146,4 @@ if __name__ == "__main__":
     fibonacci()
     print(factorial(5), "\n")
     print(reverse_integer(123), "\n")
+    print(odd([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]), "\n")
