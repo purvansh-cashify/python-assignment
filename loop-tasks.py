@@ -63,14 +63,14 @@ def rev_list():
     print("Print list in reverse order using a loop - ")
     for i in reversed(list1):
         print(i)
-    print("\n")
+    print("")
 
 
 def negative():
     print("Display numbers from -10 to -1 using for loop - ")
     for i in range(-10, 0):
         print(i)
-    print("\n")
+    print("")
 
 
 def else_done():
@@ -79,6 +79,7 @@ def else_done():
         print(i)
     else:
         print("Done")
+    print("")
 
 
 def prime():
@@ -91,20 +92,30 @@ def prime():
                 break
         else:
             print(i)
+    print("")
 
 
 def fibonacci():
     num1 = 0
     num2 = 1
     lst = [num1, num2]
-
+    print("Display Fibonacci series up to 10 terms - ")
     while len(lst) < 10:
         sum1 = num1 + num2
         num1 = num2
         num2 = sum1
         lst.append(sum1)
 
-    print(lst)
+    print(lst, "\n")
+
+
+def factorial(num):
+    fac = 1
+
+    for i in range(1, num + 1):
+        fac *= i
+    print("Find the factorial of a given number - ")
+    return fac
 
 
 if __name__ == "__main__":
@@ -120,3 +131,4 @@ if __name__ == "__main__":
     else_done()
     prime()
     fibonacci()
+    print(factorial(5), "\n")
