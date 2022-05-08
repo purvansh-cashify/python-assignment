@@ -40,6 +40,7 @@ def swap():
     tuple1 = tuple2
     tuple2 = temp
 
+
     print("Swap two tuples in Python - ")
     print("tuple1 = ", tuple1)
     print("tuple2 = ", tuple2, "\n")
@@ -65,9 +66,8 @@ def modify():
 
 def sort():
     tuple1 = (('a', 23), ('b', 37), ('c', 11), ('d', 29))
-
-    for i in tuple1:
-        print(tuple[1])
+    tuple1 = tuple(sorted(list(tuple1), key=lambda x: x[1]))
+    print(tuple1)
 
 
 def count():
@@ -81,6 +81,7 @@ def count():
     print("Counts the number of occurrences of item 50 from a tuple - ")
     print(cnt, "\n")
 
+
 def all_same():
     tuple1 = (45, 45, 45, 45)
 
@@ -88,13 +89,11 @@ def all_same():
 
     print("Check if all items in the tuple are the same - ")
 
-    for i in range(len(tuple1)-1):
-        if tuple1[i] != tuple1[i+1]:
+    for i in range(len(tuple1) - 1):
+        if tuple1[i] != tuple1[i + 1]:
             tag = False
 
     print(tag)
-
-
 
 
 if __name__ == '__main__':
@@ -105,7 +104,6 @@ if __name__ == '__main__':
     swap()
     copy()
     modify()
-    #sort()
+    sort()
     count()
     all_same()
-
