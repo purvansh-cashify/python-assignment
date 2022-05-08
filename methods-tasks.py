@@ -18,7 +18,18 @@ def calculation(a, b):
     return sm, diff
 
 
+def employee(name, salary=9000):
+    print("Create a function with default argument - ")
+    print("Name - ", name, " Salary - ", salary)
+
+
+def
+
+
 if __name__ == "__main__":
     func()
     print("Sum - ", variable(20, 40))
-    print(calculation(50, 30))
+    print(calculation(50, 30), "\n")
+    employee("Ben", 12000)
+    employee("Jessa")
+
