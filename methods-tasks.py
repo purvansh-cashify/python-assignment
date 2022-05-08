@@ -45,6 +45,20 @@ def display_student(name, age):
     print(name, age, "\n")
 
 
+def print_even():
+    print("Generate a Python list of all the even numbers between 4 to 30 - ")
+    for i in range(4, 31):
+        if i % 2 == 0:
+            print(i, end=" ")
+    print("\n")
+
+
+def largest(lst):
+    num = max(lst)
+    print("Find the largest item from a given list - ")
+    return num
+
+
 if __name__ == "__main__":
     func()
     print("Sum - ", variable(20, 40))
@@ -55,3 +69,5 @@ if __name__ == "__main__":
     print("Create a recursive function - \n", (recursive(10)), "\n")
     show_student = display_student
     show_student("Emma", 26)
+    print_even()
+    print(largest([4, 6, 8, 24, 12, 2]))
