@@ -32,14 +32,17 @@ def outer(a, b):
     print("Create an inner function to calculate the addition in the following way - ")
     return sum1
 
-def recursive(num):
 
+def recursive(num):
     if num > 0:
-        return num + recursive(num-1)
+        return num + recursive(num - 1)
     else:
         return 0
 
 
+def display_student(name, age):
+    print("Assign a different name to function and call it through the new name -")
+    print(name, age, "\n")
 
 
 if __name__ == "__main__":
@@ -49,5 +52,6 @@ if __name__ == "__main__":
     employee("Ben", 12000)
     employee("Jessa")
     print(outer(3, 4), "\n")
-    print("Create a recursive function - \n", (recursive(10)))
-
+    print("Create a recursive function - \n", (recursive(10)), "\n")
+    show_student = display_student
+    show_student("Emma", 26)
