@@ -28,10 +28,19 @@ def list_accept():
 
 
 def three_input():
+    print("\nAccept any three string from one input() call - ")
     str1, str2, str3 = input("Enter three string").split()
     print('Name1:', str1)
     print('Name2:', str2)
     print('Name3:', str3)
+
+def format1():
+    quantity = 3
+    totalMoney = 1000
+    price = 450
+    print("\nFormat variables using a string.format() method - ")
+    statement1 = "I have {1} dollars so I can buy {0} football for {2:.2f} dollars."
+    print(statement1.format(quantity, totalMoney, price))
 
 
 if __name__ == "__main__":
@@ -40,4 +49,5 @@ if __name__ == "__main__":
     octal(10)
     decimal(518.4567)
     #list_accept()
-    three_input()
+    #three_input()
+    format1()
