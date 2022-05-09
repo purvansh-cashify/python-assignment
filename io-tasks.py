@@ -1,3 +1,6 @@
+import os
+
+
 def user_input():
     print("Accept numbers from a user - ")
     num = int(input("Enter your value - "))
@@ -34,6 +37,7 @@ def three_input():
     print('Name2:', str2)
     print('Name3:', str3)
 
+
 def format1():
     quantity = 3
     totalMoney = 1000
@@ -43,11 +47,20 @@ def format1():
     print(statement1.format(quantity, totalMoney, price))
 
 
+def file_size():
+    print("\nCheck file is empty or not - ")
+    size = os.stat("hello.txt").st_size
+    if size == 0:
+        print('file is empty')
+
+
 if __name__ == "__main__":
-    #user_input()
+    # user_input()
     print_name()
     octal(10)
     decimal(518.4567)
-    #list_accept()
-    #three_input()
+    # list_accept()
+    # three_input()
     format1()
+    file_size()
+
