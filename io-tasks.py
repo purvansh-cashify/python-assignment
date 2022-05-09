@@ -24,8 +24,14 @@ def list_accept():
     print("\nAccept a list of 5 float numbers as an input from the user - ")
     for i in range(0, 5):
         lst.append(float(input()))
-
     print(lst)
+
+
+def three_input():
+    str1, str2, str3 = input("Enter three string").split()
+    print('Name1:', str1)
+    print('Name2:', str2)
+    print('Name3:', str3)
 
 
 if __name__ == "__main__":
@@ -33,4 +39,5 @@ if __name__ == "__main__":
     print_name()
     octal(10)
     decimal(518.4567)
-    list_accept()
+    #list_accept()
+    three_input()
