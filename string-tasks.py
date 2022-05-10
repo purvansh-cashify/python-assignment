@@ -120,6 +120,10 @@ def occurrences1():
 
     print(dict)
 
+def rev_string():
+    str1 = "PYnative"
+    str1 = str1[::-1]
+    print(str1)
 
 if __name__ == '__main__':
     fml()
@@ -133,5 +137,6 @@ if __name__ == '__main__':
     occurrence()
     sum_avg()
     occurrences1()
+    rev_string()
 
 
