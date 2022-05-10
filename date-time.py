@@ -26,9 +26,17 @@ def day_of_week():
     given_date = datetime(2020, 7, 26)
     print(given_date.strftime("%A"))
 
+
+def add_week():
+    given_date = datetime(2020, 3, 22, 10, 0, 0)
+    new_date = given_date + timedelta(days=7, hours=12)
+    print(new_date)
+
+
 if __name__ == "__main__":
     get_time()
     str_to_dt()
     week_minus()
     date_format()
     day_of_week()
+    add_week()
