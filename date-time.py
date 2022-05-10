@@ -1,4 +1,5 @@
 from datetime import timedelta, datetime
+import time
 
 
 def get_time():
@@ -33,6 +34,11 @@ def add_week():
     print(new_date)
 
 
+def milli():
+    milliseconds = int(time.time() * 1000)
+    print(milliseconds)
+
+
 if __name__ == "__main__":
     get_time()
     str_to_dt()
@@ -40,3 +46,4 @@ if __name__ == "__main__":
     date_format()
     day_of_week()
     add_week()
+    milli()
