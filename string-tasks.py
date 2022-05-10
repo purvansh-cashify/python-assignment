@@ -93,6 +93,7 @@ def occurrence():
     counter = str1.count(str2)
     print(counter)
 
+
 def sum_avg():
     str1 = "PYnative29@#8496"
     sum1 = 0
@@ -104,9 +105,10 @@ def sum_avg():
             sum1 += i
             counter += 1
 
-    avg = sum1/counter
+    avg = sum1 / counter
 
     print("Sum - ", sum1, "\nAverage - ", avg)
+
 
 def occurrences1():
     str1 = "Apple"
@@ -120,10 +122,12 @@ def occurrences1():
 
     print(dict)
 
+
 def rev_string():
     str1 = "PYnative"
     str1 = str1[::-1]
     print(str1)
+
 
 def last():
     str1 = "Emma is a data scientist who knows Python. Emma works at google."
@@ -131,6 +135,15 @@ def last():
     index = str1.rfind("Emma")
 
     print("Last occurrence - ", index)
+
+
+def hyphen():
+    str1 = "Emma-is-a-data-scientist"
+
+    lst = str1.split("-")
+
+    for i in lst:
+        print(i)
 
 
 if __name__ == '__main__':
@@ -147,6 +160,4 @@ if __name__ == '__main__':
     occurrences1()
     rev_string()
     last()
-
-
-
+    hyphen()
