@@ -60,6 +60,20 @@ def count():
     print("Letter - ", letter, "\nNumber - ", number, "\nSymbol - ", symbol)
 
 
+def mixed():
+    s1 = "Abc"
+    s2 = "Xyz"
+    s3 = ''
+
+    s2 = s2[::-1]
+
+    for i in range(len(s1)):
+        s3 += s1[i]
+        s3 += s2[i]
+
+    print(s3)
+
+
 if __name__ == '__main__':
     fml()
     mid()
@@ -67,3 +81,4 @@ if __name__ == '__main__':
     fml1()
     lower_first()
     count()
+    mixed()
