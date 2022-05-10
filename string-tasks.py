@@ -125,6 +125,14 @@ def rev_string():
     str1 = str1[::-1]
     print(str1)
 
+def last():
+    str1 = "Emma is a data scientist who knows Python. Emma works at google."
+
+    index = str1.rfind("Emma")
+
+    print("Last occurrence - ", index)
+
+
 if __name__ == '__main__':
     fml()
     mid()
@@ -138,5 +146,7 @@ if __name__ == '__main__':
     sum_avg()
     occurrences1()
     rev_string()
+    last()
+
 
 
