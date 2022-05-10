@@ -51,6 +51,20 @@ def four_months():
     print(new_date)
 
 
+def num_days():
+    date_1 = datetime(2020, 2, 25)
+    date_2 = datetime(2020, 9, 17)
+
+    delta = None
+    if date_1 > date_2:
+        print("date_1 is greater")
+        delta = date_1 - date_2
+    else:
+        print("date_2 is greater")
+        delta = date_2 - date_1
+    print(delta.days, "days")
+
+
 if __name__ == "__main__":
     get_time()
     str_to_dt()
@@ -61,3 +75,4 @@ if __name__ == "__main__":
     milli()
     dt_to_string()
     four_months()
+    num_days()
