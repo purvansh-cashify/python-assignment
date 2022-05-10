@@ -3,17 +3,30 @@ def fml():
     str2 = str1[0] + str1[int(len(str1) / 2)] + str1[-1]
     print(str2)
 
+
 def mid():
     str1 = "JhonDipPeta"
-    middle = int(len(str1)/2)
-    str2 = str1[middle-1] + str1[middle] + str1[middle+1]
+    middle = int(len(str1) / 2)
+    str2 = str1[middle - 1] + str1[middle] + str1[middle + 1]
     print(str2)
+
 
 def new_string():
     s1 = "Ault"
     s2 = "Kelly"
-    middle = int(len(s1)/2)
+    middle = int(len(s1) / 2)
     s3 = s1[:middle] + s2 + s1[middle:]
+    print(s3)
+
+
+def fml1():
+    s1 = "America"
+    s2 = "Japan"
+    mid1 = int(len(s1)/2)
+    mid2 = int(len(s2) / 2)
+
+    s3 = s1[0] + s2[0] + s1[mid1] + s2[mid2] + s1[-1] + s2[-1]
+
     print(s3)
 
 
@@ -21,4 +34,4 @@ if __name__ == '__main__':
     fml()
     mid()
     new_string()
-
+    fml1()
