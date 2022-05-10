@@ -40,8 +40,24 @@ def lower_first():
     for i in str1:
         if i.isupper():
             str2 += i
-
     print(str2)
+
+
+def count():
+    str1 = "P@#yn26at^&i5ve"
+    letter = 0
+    number = 0
+    symbol = 0
+
+    for i in str1:
+        if i.isalpha():
+            letter += 1
+        elif i.isdigit():
+            number += 1
+        else:
+            symbol += 1
+
+    print("Letter - ", letter, "\nNumber - ", number, "\nSymbol - ", symbol)
 
 
 if __name__ == '__main__':
@@ -50,3 +66,4 @@ if __name__ == '__main__':
     new_string()
     fml1()
     lower_first()
+    count()
