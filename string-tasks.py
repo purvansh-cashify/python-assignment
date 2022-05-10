@@ -139,11 +139,15 @@ def last():
 
 def hyphen():
     str1 = "Emma-is-a-data-scientist"
-
     lst = str1.split("-")
-
     for i in lst:
         print(i)
+
+
+def empty():
+    str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+    str_list1 = [i for i in str_list if i is not None and i != ""]
+    print(str_list1)
 
 
 if __name__ == '__main__':
@@ -161,3 +165,4 @@ if __name__ == '__main__':
     rev_string()
     last()
     hyphen()
+    empty()
