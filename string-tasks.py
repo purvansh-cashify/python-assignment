@@ -73,6 +73,16 @@ def mixed():
 
     print(s3)
 
+def balance_test():
+    s1 = "Yn"
+    s2 = "PYnative"
+
+    for j in s1:
+        if j not in s2:
+            return False
+
+    return True
+
 
 if __name__ == '__main__':
     fml()
@@ -82,3 +92,4 @@ if __name__ == '__main__':
     lower_first()
     count()
     mixed()
+    print(balance_test())
