@@ -93,6 +93,20 @@ def occurrence():
     counter = str1.count(str2)
     print(counter)
 
+def sum_avg():
+    str1 = "PYnative29@#8496"
+    sum1 = 0
+    counter = 0
+
+    for i in str1:
+        if i.isdigit():
+            i = int(i)
+            sum1 += i
+            counter += 1
+
+    avg = sum1/counter
+
+    print("Sum - ", sum1, "\nAverage - ", avg)
 
 if __name__ == '__main__':
     fml()
@@ -104,3 +118,4 @@ if __name__ == '__main__':
     mixed()
     print(balance_test())
     occurrence()
+    sum_avg()
