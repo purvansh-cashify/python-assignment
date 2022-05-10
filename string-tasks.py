@@ -178,6 +178,13 @@ def digits_alpha():
         if not (i.isdigit() or i.isalpha()):
             print(i)
 
+def rep():
+    str1 = '/*Jon is @developer & musician!!'
+
+    for i in string.punctuation:
+        str1 = str1.replace(i, "#")
+
+    print(str1)
 
 if __name__ == '__main__':
     fml()
@@ -198,3 +205,4 @@ if __name__ == '__main__':
     special()
     digits_only()
     digits_alpha()
+    rep()
