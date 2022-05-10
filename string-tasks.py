@@ -1,3 +1,6 @@
+import string
+
+
 def fml():
     str1 = "James"
     str2 = str1[0] + str1[int(len(str1) / 2)] + str1[-1]
@@ -149,6 +152,12 @@ def empty():
     str_list1 = [i for i in str_list if i is not None and i != ""]
     print(str_list1)
 
+def special():
+    str1 = "/*Jon is @developer & musician"
+    new_str = str1.translate(str.maketrans('', '', string.punctuation))
+
+    print(new_str)
+
 
 if __name__ == '__main__':
     fml()
@@ -166,3 +175,4 @@ if __name__ == '__main__':
     last()
     hyphen()
     empty()
+    special()
