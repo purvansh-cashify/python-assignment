@@ -17,7 +17,18 @@ def week_minus():
     print(new_date)
 
 
+def date_format():
+    given_date = datetime(2020, 2, 25)
+    print(given_date.strftime("%A %d %B %Y"))
+
+
+def day_of_week():
+    given_date = datetime(2020, 7, 26)
+    print(given_date.strftime("%A"))
+
 if __name__ == "__main__":
     get_time()
     str_to_dt()
     week_minus()
+    date_format()
+    day_of_week()
