@@ -73,6 +73,7 @@ def mixed():
 
     print(s3)
 
+
 def balance_test():
     s1 = "Yn"
     s2 = "PYnative"
@@ -84,6 +85,15 @@ def balance_test():
     return True
 
 
+def occurrence():
+    str1 = "Welcome to USA. usa awesome, isn't it?"
+    str2 = "usa"
+
+    str1 = str1.lower()
+    counter = str1.count(str2)
+    print(counter)
+
+
 if __name__ == '__main__':
     fml()
     mid()
@@ -93,3 +103,4 @@ if __name__ == '__main__':
     count()
     mixed()
     print(balance_test())
+    occurrence()
