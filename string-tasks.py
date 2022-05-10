@@ -152,11 +152,31 @@ def empty():
     str_list1 = [i for i in str_list if i is not None and i != ""]
     print(str_list1)
 
+
 def special():
     str1 = "/*Jon is @developer & musician"
     new_str = str1.translate(str.maketrans('', '', string.punctuation))
 
     print(new_str)
+
+
+def digits_only():
+    str1 = 'I am 25 years and 10 months old'
+    str2 = ''
+
+    for i in str1:
+        if i.isdigit():
+            str2 += i
+    print(str2)
+
+
+def digits_alpha():
+    str1 = "Emma25 is Data scientist50 and AI Expert"
+    lst = str1.split()
+
+    for i in lst:
+        if not (i.isdigit() or i.isalpha()):
+            print(i)
 
 
 if __name__ == '__main__':
@@ -176,3 +196,5 @@ if __name__ == '__main__':
     hyphen()
     empty()
     special()
+    digits_only()
+    digits_alpha()
