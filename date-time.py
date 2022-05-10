@@ -1,5 +1,6 @@
 from datetime import timedelta, datetime
 import time
+from dateutil.relativedelta import relativedelta
 
 
 def get_time():
@@ -43,6 +44,13 @@ def dt_to_string():
     given_date = datetime(2020, 2, 25)
     print(given_date.strftime("%Y-%m-%d %H:%M:%S"))
 
+
+def four_months():
+    given_date = datetime(2020, 2, 25).date()
+    new_date = given_date + relativedelta(months=4)
+    print(new_date)
+
+
 if __name__ == "__main__":
     get_time()
     str_to_dt()
@@ -52,3 +60,4 @@ if __name__ == "__main__":
     add_week()
     milli()
     dt_to_string()
+    four_months()
