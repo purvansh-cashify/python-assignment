@@ -22,7 +22,7 @@ def new_string():
 def fml1():
     s1 = "America"
     s2 = "Japan"
-    mid1 = int(len(s1)/2)
+    mid1 = int(len(s1) / 2)
     mid2 = int(len(s2) / 2)
 
     s3 = s1[0] + s2[0] + s1[mid1] + s2[mid2] + s1[-1] + s2[-1]
@@ -30,8 +30,23 @@ def fml1():
     print(s3)
 
 
+def lower_first():
+    str1 = 'PyNaTive'
+    str2 = ''
+
+    for i in str1:
+        if i.islower():
+            str2 += i
+    for i in str1:
+        if i.isupper():
+            str2 += i
+
+    print(str2)
+
+
 if __name__ == '__main__':
     fml()
     mid()
     new_string()
     fml1()
+    lower_first()
