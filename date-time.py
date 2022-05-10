@@ -39,6 +39,10 @@ def milli():
     print(milliseconds)
 
 
+def dt_to_string():
+    given_date = datetime(2020, 2, 25)
+    print(given_date.strftime("%Y-%m-%d %H:%M:%S"))
+
 if __name__ == "__main__":
     get_time()
     str_to_dt()
@@ -47,3 +51,4 @@ if __name__ == "__main__":
     day_of_week()
     add_week()
     milli()
+    dt_to_string()
