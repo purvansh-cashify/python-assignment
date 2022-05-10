@@ -108,6 +108,19 @@ def sum_avg():
 
     print("Sum - ", sum1, "\nAverage - ", avg)
 
+def occurrences1():
+    str1 = "Apple"
+    dict = {}
+
+    for i in str1:
+        if i in dict:
+            dict[i] += 1
+        else:
+            dict[i] = 1
+
+    print(dict)
+
+
 if __name__ == '__main__':
     fml()
     mid()
@@ -119,3 +132,6 @@ if __name__ == '__main__':
     print(balance_test())
     occurrence()
     sum_avg()
+    occurrences1()
+
+
